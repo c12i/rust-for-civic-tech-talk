@@ -25,7 +25,7 @@ class: text-center
 # Rust for Civic Tech
 
 <p class="text-lg text-muted mt-2">
-Scraping, structuring, and serving Kenya's parliamentary data, in Rust.
+Capturing, structuring, and serving Kenya's parliamentary data, in Rust.
 </p>
 
 <div class="mt-12 text-sm text-muted">
@@ -72,28 +72,6 @@ layout: default
 
 <!--
 Quick personality slide, helps the room warm up before diving into code.
--->
-
----
-layout: default
----
-
-# What We'll Cover
-
-This talk walks through building a full civic data platform in Rust:
-
-- **Scraping** parliamentary records off live government and mirror websites
-- **Structuring** that data through typed pipelines
-- **Exposing** it via a CLI for ad-hoc queries
-- **Wiring it up** as an MCP server, so AI assistants can reason over it directly
-
-<br>
-
-Every layer is production Rust: real HTML parsing, real async pipelines,
-real tooling that runs against messy, inconsistent public data.
-
-<!--
-This is the "trailer" slide. Don't dwell, just set up the four acts.
 -->
 
 ---
