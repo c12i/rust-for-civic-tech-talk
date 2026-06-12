@@ -741,6 +741,16 @@ layout: default
 
 </v-clicks>
 
+<v-click>
+
+<div class="mt-8 text-sm text-muted">
+Try it yourself: point any MCP-compatible client (Claude, ChatGPT, etc.)
+at <code>https://odnelazm.c12i.xyz/sse</code> and start querying live
+Hansard data.
+</div>
+
+</v-click>
+
 <!--
 Honest "what's not solved yet" slide. Sets up future work later in the
 talk (issue #76 on bulk operations is related in spirit). The last
@@ -765,6 +775,7 @@ layout: default
 <v-clicks>
 
 - Store member profiles
+- Store sittings
 - Build associations:
   - Sitting ↔ Bills
   - Sitting ↔ Topics
