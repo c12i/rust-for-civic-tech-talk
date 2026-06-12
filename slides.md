@@ -28,7 +28,8 @@ Scraping, structuring, and serving Kenya's parliamentary data, in Rust.
 </p>
 
 <div class="mt-12 text-sm text-muted">
-Collins Muriuki · Mwananchi Tech
+<a href="https://collinsmuriuki.xyz">Collins Muriuki</a> ·
+<a href="https://github.com/mwananchi-tech">Mwananchi Tech</a>
 </div>
 
 <!--
@@ -45,11 +46,9 @@ layout: default
 - Software engineer, 6 years of experience
 - Backend / Distributed Systems / Developer Tooling focus
 - Rustacean since 2020
-- Currently at **Mwananchi Tech**, the umbrella org behind everything
-  in this talk
+- Currently building **Mwananchi Tech**, the umbrella org behind
+  everything in this talk
 - Also an Interview Engineer at **Karat**
-- Maintainer of **Bunge Bits**, **odnelazm**, and **Bunge Hub**, all
-  open source
 
 <!--
 Brief professional intro. Keep this tight, 1-2 minutes max.
