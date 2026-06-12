@@ -908,11 +908,11 @@ odnelazm-pipeline ingest
 # Ingest a date range, skip member import
 odnelazm-pipeline ingest --start-date 2026-01-01 --end-date 2026-03-31 --skip-members
 
-# Also enrich member profiles (bio, photo, committees, voting record)
-odnelazm-pipeline ingest --enrich-members
+# Also fetch full member profiles (bio, photo, committees, voting record)
+odnelazm-pipeline ingest --import-profiles
 
-# Custom database
-odnelazm-pipeline --database-url postgres://user:pass@host/db ingest
+# Custom database + Prometheus metrics
+odnelazm-pipeline --database-url postgres://user:pass@host/db --metrics-url http://localhost:9091 ingest
 ```
 
 Designed to run unattended, metrics pushed to Prometheus via
@@ -1156,6 +1156,9 @@ odnelazm-pipeline enrich sittings \
   --model qwen/qwen3-30b \
   --batch 5 \
   --concurrency 2
+
+# Same --database-url / --metrics-url flags as ingest
+odnelazm-pipeline --database-url postgres://user:pass@host/db --metrics-url http://localhost:9091 enrich <enrichment-target>
 ```
 
 Same `odnelazm-pipeline` binary as ingestion, run as a separate,
