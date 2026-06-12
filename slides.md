@@ -1,6 +1,7 @@
 ---
 theme: default
 title: Rust for Civic Tech
+favicon: ./favicon.ico
 info: |
   ## Rust for Civic Tech
   Building a civic data platform in Rust: scrapers, pipelines, CLIs, and
@@ -178,7 +179,7 @@ where
     A: AudioHandler + Send + Sync + 'static,
     P: ChannelScraper + Send + Sync + 'static,
 {
-    workdir: PathBuf,
+    workdir: PathBuf,   // local fs dir for audio and transcript artefacts
     store: D,           // data storage layer
     transcriber: T,     // LLM transcription layer
     summarizer: S,      // LLM summarizer layer
